@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 268" font-family="Arial, sans-serif" font-size="12">
-  <!-- v3: explicit white background for dark mode compatibility -->
-  <rect x="0" y="0" width="800" height="268" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" font-family="Arial, sans-serif" font-size="12">
+  <rect x="0" y="0" width="800" height="270" fill="white"/>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
@@ -8,8 +7,8 @@
   </defs>
 
   <!-- Background: App, Website, or Ad SDK -->
-  <rect x="200" y="0" width="400" height="263" fill="#3a3a3a" rx="4"/>
-  <text x="400" y="18" text-anchor="middle" fill="white" font-size="11">App, Website, or Ad SDK</text>
+  <rect x="200" y="5" width="400" height="255" fill="#3a3a3a" rx="4"/>
+  <text x="400" y="22" text-anchor="middle" fill="white" font-size="11">App, Website, or Ad SDK</text>
 
   <!-- Ad Server (external left) -->
   <rect x="10" y="40" width="160" height="120" fill="#ffff99" stroke="#999" rx="3"/>
@@ -20,37 +19,37 @@
   <text x="90" y="119" text-anchor="middle" font-size="10">Ad Verification</text>
 
   <!-- Ad View (green, inside app) -->
-  <rect x="230" y="30" width="200" height="80" fill="#7fbf4f" stroke="#666" rx="3"/>
-  <text x="330" y="75" text-anchor="middle" font-weight="bold" fill="white">Ad View</text>
+  <rect x="230" y="35" width="200" height="80" fill="#7fbf4f" stroke="#666" rx="3"/>
+  <text x="330" y="80" text-anchor="middle" font-weight="bold" fill="white">Ad View</text>
 
   <!-- Arrow: Ad Server -> Ad View -->
-  <line x1="170" y1="90" x2="228" y2="70" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="170" y1="90" x2="228" y2="75" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
 
   <!-- Common Signals (between Ad View and OM SDK) -->
-  <text x="330" y="132" text-anchor="middle" fill="#ccc" font-size="10" font-style="italic">Common Signals</text>
-  <line x1="330" y1="110" x2="330" y2="150" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="330" y="135" text-anchor="middle" fill="#ccc" font-size="10" font-style="italic">Common Signals</text>
+  <line x1="330" y1="115" x2="330" y2="155" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
 
   <!-- OM SDK (green, inside app) -->
-  <rect x="230" y="155" width="200" height="65" fill="#339933" stroke="#666" rx="3"/>
-  <text x="330" y="193" text-anchor="middle" font-weight="bold" fill="white">OM SDK</text>
+  <rect x="230" y="160" width="160" height="60" fill="#339933" stroke="#666" rx="3"/>
+  <text x="310" y="195" text-anchor="middle" font-weight="bold" fill="white">OM SDK</text>
 
   <!-- Verification Script (orange, inside app) -->
-  <rect x="470" y="155" width="110" height="65" fill="#ff9933" stroke="#666" rx="3"/>
-  <text x="525" y="183" text-anchor="middle" font-size="11">Verification</text>
-  <text x="525" y="198" text-anchor="middle" font-size="11">Script</text>
+  <rect x="430" y="160" width="140" height="60" fill="#ff9933" stroke="#666" rx="3"/>
+  <text x="500" y="186" text-anchor="middle" font-size="11">Verification</text>
+  <text x="500" y="200" text-anchor="middle" font-size="11">Script</text>
 
-  <!-- Arrow: OM SDK -> Verification Script -->
-  <line x1="430" y1="188" x2="468" y2="188" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="449" y="180" text-anchor="middle" fill="#ccc" font-size="9">OMID</text>
-  <text x="449" y="200" text-anchor="middle" fill="#ccc" font-size="9">Events</text>
+  <!-- Arrow: OM SDK -> Verification Script (OMID Events) -->
+  <line x1="390" y1="190" x2="428" y2="190" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="409" y="182" text-anchor="middle" fill="#ccc" font-size="9">OMID</text>
+  <text x="409" y="203" text-anchor="middle" fill="#ccc" font-size="9">Events</text>
 
   <!-- Verification Partner Server (external right) -->
-  <rect x="640" y="145" width="140" height="85" fill="#ff9933" stroke="#999" rx="3"/>
-  <text x="710" y="183" text-anchor="middle" font-weight="bold" font-size="11">Verification</text>
-  <text x="710" y="198" text-anchor="middle" font-weight="bold" font-size="11">Partner Server</text>
+  <rect x="630" y="150" width="150" height="80" fill="#ff9933" stroke="#999" rx="3"/>
+  <text x="705" y="186" text-anchor="middle" font-weight="bold" font-size="11">Verification</text>
+  <text x="705" y="200" text-anchor="middle" font-weight="bold" font-size="11">Partner Server</text>
 
   <!-- Arrow: Verification Script -> VPS -->
-  <line x1="580" y1="188" x2="638" y2="188" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="570" y1="190" x2="628" y2="190" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
 
   <!-- Legend -->
   <rect x="640" y="25" width="16" height="12" fill="#ffff99" stroke="#999"/>

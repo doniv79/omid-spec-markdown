@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 290" font-family="Arial, sans-serif" font-size="11">
-  <!-- v3 -->
-  <rect x="0" y="0" width="820" height="290" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" font-family="Arial, sans-serif" font-size="11">
+  <rect x="0" y="0" width="780" height="300" fill="white"/>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
@@ -8,64 +7,65 @@
   </defs>
 
   <!-- Outer: Integration Partner App or Ad SDK -->
-  <rect x="0" y="0" width="600" height="290" fill="#e0e0e0" stroke="#333" rx="4"/>
-  <text x="300" y="16" text-anchor="middle" font-size="11" font-weight="bold">Integration Partner App or Ad SDK</text>
+  <rect x="5" y="5" width="560" height="290" fill="#e0e0e0" stroke="#333" rx="4"/>
+  <text x="285" y="20" text-anchor="middle" font-size="11" font-weight="bold">Integration Partner App or Ad SDK</text>
 
-  <!-- Native Controller -->
-  <rect x="10" y="35" width="90" height="80" fill="#c0c0c0" stroke="#333" rx="3"/>
-  <text x="55" y="75" text-anchor="middle" font-size="10">Native</text>
-  <text x="55" y="88" text-anchor="middle" font-size="10">Controller</text>
+  <!-- Native Controller (gray, top-left) -->
+  <rect x="15" y="32" width="110" height="65" fill="#c0c0c0" stroke="#333" rx="3"/>
+  <text x="70" y="62" text-anchor="middle" font-size="10">Native</text>
+  <text x="70" y="75" text-anchor="middle" font-size="10">Controller</text>
 
-  <!-- Ad View or Video Player (no WebView) -->
-  <rect x="140" y="35" width="160" height="60" fill="#c0c0c0" stroke="#333" rx="3"/>
-  <text x="220" y="62" text-anchor="middle" font-size="10">Ad View</text>
-  <text x="220" y="75" text-anchor="middle" font-size="10">or Video Player</text>
+  <!-- Ad View or Video Player (gray, top-center) -->
+  <rect x="160" y="32" width="160" height="55" fill="#c0c0c0" stroke="#333" rx="3"/>
+  <text x="240" y="57" text-anchor="middle" font-size="10">Ad View</text>
+  <text x="240" y="70" text-anchor="middle" font-size="10">or Video Player</text>
 
-  <!-- Arrow: Native Controller -> OM SDK (Native Signals) -->
-  <line x1="55" y1="115" x2="55" y2="148" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="30" y="135" font-size="8" fill="#333">Native</text>
-  <text x="30" y="144" font-size="8" fill="#333">Signals</text>
+  <!-- Arrow: Native Controller -> OM SDK Native (Native Signals) -->
+  <line x1="70" y1="97" x2="70" y2="148" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="48" y="118" font-size="8" fill="#333">Native</text>
+  <text x="48" y="127" font-size="8" fill="#333">Signals</text>
 
   <!-- OM SDK (Native API) - blue -->
-  <rect x="10" y="150" width="90" height="60" fill="#4472c4" stroke="#333" rx="3"/>
-  <text x="55" y="175" text-anchor="middle" fill="white" font-size="10">OM SDK</text>
-  <text x="55" y="188" text-anchor="middle" fill="white" font-size="10">(Native API)</text>
+  <rect x="15" y="150" width="110" height="60" fill="#4472c4" stroke="#333" rx="3"/>
+  <text x="70" y="176" text-anchor="middle" fill="white" font-size="10">OM SDK</text>
+  <text x="70" y="189" text-anchor="middle" fill="white" font-size="10">(Native API)</text>
 
   <!-- OM SDK WebView / JavaScript Context - blue container -->
-  <rect x="140" y="120" width="280" height="150" fill="#4472c4" stroke="#333" rx="3"/>
-  <text x="280" y="138" text-anchor="middle" fill="white" font-size="9">OM SDK WebView (Android) or JavaScript Context (iOS)</text>
+  <rect x="155" y="110" width="290" height="170" fill="#4472c4" stroke="#333" rx="3"/>
+  <text x="300" y="128" text-anchor="middle" fill="white" font-size="9">OM SDK WebView (Android) or JavaScript Context (iOS)</text>
 
   <!-- OM SDK JS Service - green inside blue -->
-  <rect x="160" y="150" width="140" height="50" fill="#339933" stroke="#333" rx="3"/>
-  <text x="230" y="173" text-anchor="middle" fill="white" font-size="10">OM SDK</text>
-  <text x="230" y="186" text-anchor="middle" fill="white" font-size="10">JS Service</text>
+  <rect x="170" y="140" width="130" height="50" fill="#339933" stroke="#333" rx="3"/>
+  <text x="235" y="163" text-anchor="middle" fill="white" font-size="10">OM SDK</text>
+  <text x="235" y="176" text-anchor="middle" fill="white" font-size="10">JS Service</text>
 
-  <!-- Verification Script - orange -->
-  <rect x="330" y="145" width="80" height="55" fill="#ff9933" stroke="#333" rx="3"/>
-  <text x="370" y="168" text-anchor="middle" font-size="9">Verification</text>
-  <text x="370" y="180" text-anchor="middle" font-size="9">Script</text>
+  <!-- Verification Script - orange inside blue -->
+  <rect x="340" y="140" width="90" height="50" fill="#ff9933" stroke="#333" rx="3"/>
+  <text x="385" y="163" text-anchor="middle" font-size="9">Verification</text>
+  <text x="385" y="175" text-anchor="middle" font-size="9">Script</text>
 
-  <!-- Verification Client - orange inside Verification Script -->
-  <rect x="160" y="215" width="240" height="35" fill="#ff9933" stroke="#333" rx="3"/>
-  <text x="280" y="237" text-anchor="middle" font-size="10">Verification Client (JavaScript API)</text>
+  <!-- Arrow: JS Service -> Verification Script (OMID Events) -->
+  <line x1="300" y1="165" x2="338" y2="165" stroke="white" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="319" y="158" text-anchor="middle" font-size="8" fill="white">OMID</text>
+  <text x="319" y="180" text-anchor="middle" font-size="8" fill="white">Events</text>
+
+  <!-- Verification Client - orange inside blue, below JS Service + Verification Script -->
+  <rect x="170" y="205" width="260" height="35" fill="#ff9933" stroke="#333" rx="3"/>
+  <text x="300" y="220" text-anchor="middle" font-size="10">Verification Client</text>
+  <text x="300" y="233" text-anchor="middle" font-size="9">(JavaScript API)</text>
 
   <!-- OMID Bridge: Native API <-> JS Service -->
-  <line x1="100" y1="180" x2="158" y2="175" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="129" y="170" text-anchor="middle" font-size="8" fill="white">OMID</text>
-  <text x="129" y="179" text-anchor="middle" font-size="8" fill="white">Bridge</text>
-
-  <!-- Arrow: JS Service -> Verification (OMID Events) -->
-  <line x1="300" y1="175" x2="328" y2="175" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="314" y="168" text-anchor="middle" font-size="8" fill="white">OMID</text>
-  <text x="314" y="190" text-anchor="middle" font-size="8" fill="white">Events</text>
+  <line x1="125" y1="180" x2="168" y2="168" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="138" y="162" text-anchor="middle" font-size="8" fill="#333">OMID</text>
+  <text x="138" y="192" text-anchor="middle" font-size="8" fill="#333">Bridge</text>
 
   <!-- Legend -->
-  <rect x="640" y="30" width="14" height="11" fill="#c0c0c0" stroke="#333"/>
-  <text x="660" y="40" font-size="9">Integration Partner (Native)</text>
-  <rect x="640" y="50" width="14" height="11" fill="#4472c4" stroke="#333"/>
-  <text x="660" y="60" font-size="9">OM SDK (Native)</text>
-  <rect x="640" y="70" width="14" height="11" fill="#339933" stroke="#333"/>
-  <text x="660" y="80" font-size="9">OM SDK (JavaScript)</text>
-  <rect x="640" y="90" width="14" height="11" fill="#ff9933" stroke="#333"/>
-  <text x="660" y="100" font-size="9">Third party (JavaScript)</text>
+  <rect x="600" y="32" width="14" height="11" fill="#c0c0c0" stroke="#333"/>
+  <text x="620" y="42" font-size="9">Integration Partner (Native)</text>
+  <rect x="600" y="52" width="14" height="11" fill="#4472c4" stroke="#333"/>
+  <text x="620" y="62" font-size="9">OM SDK (Native)</text>
+  <rect x="600" y="72" width="14" height="11" fill="#339933" stroke="#333"/>
+  <text x="620" y="82" font-size="9">OM SDK (JavaScript)</text>
+  <rect x="600" y="92" width="14" height="11" fill="#ff9933" stroke="#333"/>
+  <text x="620" y="102" font-size="9">Third party (JavaScript)</text>
 </svg>
