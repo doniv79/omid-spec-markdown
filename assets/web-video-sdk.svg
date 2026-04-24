@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" font-family="Arial, sans-serif" font-size="11">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Outer: Integration Partner Website or Web Ad SDK -->
+  <rect x="0" y="0" width="580" height="200" fill="#e0e0e0" stroke="#333" rx="4"/>
+  <text x="290" y="16" text-anchor="middle" font-size="11" font-weight="bold">Integration Partner Website or Web Ad SDK</text>
+
+  <!-- Video Player - yellow -->
+  <rect x="15" y="35" width="140" height="80" fill="#ffff66" stroke="#333" rx="3"/>
+  <text x="85" y="65" text-anchor="middle" font-size="10">Video Player</text>
+  <!-- OMID Session inside Video Player -->
+  <rect x="25" y="75" width="120" height="30" fill="#ffff66" stroke="#333" rx="2"/>
+  <text x="85" y="95" text-anchor="middle" font-size="9">OMID Session</text>
+  <text x="85" y="70" text-anchor="middle" font-size="9">(JavaScript APIs)</text>
+
+  <!-- Arrow: Video Player -> OM Web Video SDK (JS Signals) -->
+  <line x1="155" y1="75" x2="198" y2="75" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="176" y="68" text-anchor="middle" font-size="8" fill="#333">JS Signals</text>
+
+  <!-- OM Web Video SDK - green -->
+  <rect x="200" y="40" width="140" height="70" fill="#339933" stroke="#333" rx="3"/>
+  <text x="270" y="72" text-anchor="middle" fill="white" font-size="10">OM Web Video SDK</text>
+
+  <!-- Arrow: OM Web Video SDK -> Verification Script (OMID Events) -->
+  <line x1="340" y1="75" x2="398" y2="75" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="369" y="67" text-anchor="middle" font-size="8" fill="#333">OMID</text>
+  <text x="369" y="90" text-anchor="middle" font-size="8" fill="#333">Events</text>
+
+  <!-- Verification Script - orange -->
+  <rect x="400" y="35" width="160" height="80" fill="#ff9933" stroke="#333" rx="3"/>
+  <text x="480" y="65" text-anchor="middle" font-size="10">Verification Script</text>
+  <!-- Verification Client inside -->
+  <rect x="415" y="78" width="130" height="28" fill="#ff9933" stroke="#333" rx="2"/>
+  <text x="480" y="96" text-anchor="middle" font-size="9">Verification Client</text>
+  <text x="480" y="75" text-anchor="middle" font-size="9">(JavaScript API)</text>
+
+  <!-- Legend -->
+  <rect x="640" y="30" width="14" height="11" fill="#ffff66" stroke="#333"/>
+  <text x="660" y="40" font-size="9">Integration Partner</text>
+  <rect x="640" y="50" width="14" height="11" fill="#339933" stroke="#333"/>
+  <text x="660" y="60" font-size="9">OM SDK</text>
+  <rect x="640" y="70" width="14" height="11" fill="#ff9933" stroke="#333"/>
+  <text x="660" y="80" font-size="9">Third party</text>
+</svg>

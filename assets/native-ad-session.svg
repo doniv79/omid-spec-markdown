@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 290" font-family="Arial, sans-serif" font-size="11">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Outer: Integration Partner App or Ad SDK -->
+  <rect x="0" y="0" width="600" height="290" fill="#e0e0e0" stroke="#333" rx="4"/>
+  <text x="300" y="16" text-anchor="middle" font-size="11" font-weight="bold">Integration Partner App or Ad SDK</text>
+
+  <!-- Native Controller -->
+  <rect x="10" y="35" width="90" height="80" fill="#c0c0c0" stroke="#333" rx="3"/>
+  <text x="55" y="75" text-anchor="middle" font-size="10">Native</text>
+  <text x="55" y="88" text-anchor="middle" font-size="10">Controller</text>
+
+  <!-- Ad View or Video Player (no WebView) -->
+  <rect x="140" y="35" width="160" height="60" fill="#c0c0c0" stroke="#333" rx="3"/>
+  <text x="220" y="62" text-anchor="middle" font-size="10">Ad View</text>
+  <text x="220" y="75" text-anchor="middle" font-size="10">or Video Player</text>
+
+  <!-- Arrow: Native Controller -> OM SDK (Native Signals) -->
+  <line x1="55" y1="115" x2="55" y2="148" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="30" y="135" font-size="8" fill="#333">Native</text>
+  <text x="30" y="144" font-size="8" fill="#333">Signals</text>
+
+  <!-- OM SDK (Native API) - blue -->
+  <rect x="10" y="150" width="90" height="60" fill="#4472c4" stroke="#333" rx="3"/>
+  <text x="55" y="175" text-anchor="middle" fill="white" font-size="10">OM SDK</text>
+  <text x="55" y="188" text-anchor="middle" fill="white" font-size="10">(Native API)</text>
+
+  <!-- OM SDK WebView / JavaScript Context - blue container -->
+  <rect x="140" y="120" width="280" height="150" fill="#4472c4" stroke="#333" rx="3"/>
+  <text x="280" y="138" text-anchor="middle" fill="white" font-size="9">OM SDK WebView (Android) or JavaScript Context (iOS)</text>
+
+  <!-- OM SDK JS Service - green inside blue -->
+  <rect x="160" y="150" width="140" height="50" fill="#339933" stroke="#333" rx="3"/>
+  <text x="230" y="173" text-anchor="middle" fill="white" font-size="10">OM SDK</text>
+  <text x="230" y="186" text-anchor="middle" fill="white" font-size="10">JS Service</text>
+
+  <!-- Verification Script - orange -->
+  <rect x="330" y="145" width="80" height="55" fill="#ff9933" stroke="#333" rx="3"/>
+  <text x="370" y="168" text-anchor="middle" font-size="9">Verification</text>
+  <text x="370" y="180" text-anchor="middle" font-size="9">Script</text>
+
+  <!-- Verification Client - orange inside Verification Script -->
+  <rect x="160" y="215" width="240" height="35" fill="#ff9933" stroke="#333" rx="3"/>
+  <text x="280" y="237" text-anchor="middle" font-size="10">Verification Client (JavaScript API)</text>
+
+  <!-- OMID Bridge: Native API <-> JS Service -->
+  <line x1="100" y1="180" x2="158" y2="175" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="129" y="170" text-anchor="middle" font-size="8" fill="white">OMID</text>
+  <text x="129" y="179" text-anchor="middle" font-size="8" fill="white">Bridge</text>
+
+  <!-- Arrow: JS Service -> Verification (OMID Events) -->
+  <line x1="300" y1="175" x2="328" y2="175" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="314" y="168" text-anchor="middle" font-size="8" fill="white">OMID</text>
+  <text x="314" y="190" text-anchor="middle" font-size="8" fill="white">Events</text>
+
+  <!-- Legend -->
+  <rect x="640" y="30" width="14" height="11" fill="#c0c0c0" stroke="#333"/>
+  <text x="660" y="40" font-size="9">Integration Partner (Native)</text>
+  <rect x="640" y="50" width="14" height="11" fill="#4472c4" stroke="#333"/>
+  <text x="660" y="60" font-size="9">OM SDK (Native)</text>
+  <rect x="640" y="70" width="14" height="11" fill="#339933" stroke="#333"/>
+  <text x="660" y="80" font-size="9">OM SDK (JavaScript)</text>
+  <rect x="640" y="90" width="14" height="11" fill="#ff9933" stroke="#333"/>
+  <text x="660" y="100" font-size="9">Third party (JavaScript)</text>
+</svg>
